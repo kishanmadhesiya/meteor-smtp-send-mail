@@ -1,0 +1,86 @@
+<head>
+  <title>sendmail</title>
+</head>
+
+<body>
+  <h1>Send Email Using Gmail SMTP By Kishan</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+    <div class="container">
+
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Contact Us Today!</legend>
+
+<!-- Text input-->
+
+<div class="form-group">
+  <label class="col-md-4 control-label">Name</label>  
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+  <input  name="first_name" placeholder="Name" class="form-control"  type="text" id="name">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+       <div class="form-group">
+  <label class="col-md-4 control-label">E-Mail</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text" id="email">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+  <!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label">Subject</label>  
+   <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+  <input name="Subject" placeholder="Subject" class="form-control" type="text" id="subject">
+    </div>
+  </div>
+</div>
+
+ 
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label">Message</label>  
+   <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+  <input name="Message" placeholder="Message" class="form-control" type="text" id="message">
+    </div>
+  </div>
+</div>
+
+
+<!-- Success message -->
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+      <button type="button" id="buttonsub" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>
+</template>
+
+
